@@ -44,6 +44,7 @@ The following **additional** features are implemented:
 * [X] Used ViewPager layout to show top stories 
 * [X] Used Calligraphy library to use Newspaper like Font 
 * [X] Used Event Bus to communicate Network State change across the application
+* [X] Used SharedPreferences to save the filter data 
 * [X] Used Card View to show Search Articles 
 
 ## Video Walkthrough
