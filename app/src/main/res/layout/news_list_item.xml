@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="?android:attr/listPreferredItemHeight">
+
+    <TextView
+        android:id="@+id/list_item_news_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/black"
+        tools:text="Header Text" />
+
+    <TextView
+        android:id="@+id/list_item_news_description"
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/list_item_news_title"
+        android:layout_gravity="right"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_toLeftOf="@+id/list_item_new_thumb"
+        android:layout_toStartOf="@+id/list_item_new_thumb"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:minLines="1"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        tools:text="This is a test  This is a test  This is a test  This is a test." />
+
+    <ImageView
+        android:id="@+id/list_item_new_thumb"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/list_item_news_description"
+        android:layout_below="@+id/list_item_news_title"
+        android:layout_marginRight="16dp"
+        android:scaleType="fitStart"
+        android:transitionName="newsimage" />
+
+    <TextView
+        android:id="@+id/list_item_news_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/list_item_news_description"
+        android:layout_alignStart="@+id/list_item_news_description"
+        android:layout_below="@+id/list_item_news_description"
+        android:paddingBottom="8dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/colorAccent"
+        tools:text="Medium Text" />
+</RelativeLayout>
